@@ -123,7 +123,7 @@ result <- data.frame();
 # testing using only the smaller "test" set of data).
 if (length(sets) >= 2) {
     for (i in 2:length(sets)) {
-        rbind(sets[[1]],sets[[i]]);
+        sets[[1]] <- rbind(sets[[1]],sets[[i]]);
     }
 }
 
